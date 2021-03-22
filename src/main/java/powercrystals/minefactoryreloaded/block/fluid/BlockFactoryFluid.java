@@ -223,7 +223,7 @@ public class BlockFactoryFluid extends BlockFluidCoFHBase implements IRedNetDeco
 	@Override
 	public String getUnlocalizedName() {
 
-		return "fluid." + this.unlocalizedName;
+		return "fluid." + super.getUnlocalizedName().substring(5);
 	}
 
 	@Override

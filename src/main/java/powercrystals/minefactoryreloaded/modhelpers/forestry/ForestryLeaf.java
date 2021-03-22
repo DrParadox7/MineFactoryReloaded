@@ -130,7 +130,7 @@ public class ForestryLeaf extends HarvestableTreeLeaves implements IFactoryFruit
 	@Strippable("")
 	@SuppressWarnings("deprecation")
 	private static ITree[] getSaplingsOld(ITree tree, World world, int x, int y, int z, float modifier) {
-		return tree.getSaplings(world, x, y, z, modifier);
+		return tree.getSaplings(world, null, x, y, z, modifier);
 	}
 
 	@Override // FRUIT PICKER
