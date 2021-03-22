@@ -179,7 +179,7 @@ public class MineFactoryReloadedCore extends BaseMod {
 	//static{DepLoader.load();}
 	public static final String modId = "MineFactoryReloaded";
 	public static final String modName = "MineFactory Reloaded";
-	public static final String version = "1.7.10R2.8.2B1";
+	public static final String version = "@VERSION@";
 	public static final String dependencies = CoFHCore.version_group;
 	public static final String modNetworkChannel = "MFReloaded";
 
@@ -633,7 +633,7 @@ public class MineFactoryReloadedCore extends BaseMod {
 
 		WorldHandler.instance.registerFeature(new MineFactoryReloadedWorldGen());
 
-		UpdateManager.registerUpdater(new UpdateManager(this, null, CoFHProps.DOWNLOAD_URL));
+//		UpdateManager.registerUpdater(new UpdateManager(this, null, CoFHProps.DOWNLOAD_URL));
 	}
 
 	private void addDispenserBehavior() {

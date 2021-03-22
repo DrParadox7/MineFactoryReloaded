@@ -20,13 +20,15 @@ apply plugin: 'forge'
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "1.7.10R2.8.2"
+version = "1.7.10R2.8.2.1"
 group= "minefactoryreloaded"
 archivesBaseName = "MineFactoryReloaded"
 
 minecraft {
     version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "eclipse"
+    replace "@VERSION@", project.version
+    replaceIn "MineFactoryReloadedCore.java"
 }
 
 repositories {
@@ -83,6 +85,5 @@ processResources
     // copy everything else, thats not the mcmod.info
     from(sourceSets.main.resources.srcDirs) {
         exclude 'mcmod.info'
-        exclude 'CoFH_at.cfg'
     }
 }
