@@ -341,7 +341,7 @@ public class MineFactoryReloadedCore extends BaseMod {
 		rubberBarItem = (new ItemFactory()).setUnlocalizedName("mfr.rubber.bar");
 
 		rawPlasticItem = (new ItemFactory()).setUnlocalizedName("mfr.plastic.raw");
-		plasticSheetItem = (new ItemFactory()).setUnlocalizedName("mfr.plastic.sheet").setMaxStackSize(96);
+		plasticSheetItem = (new ItemFactory()).setUnlocalizedName("mfr.plastic.sheet").setMaxStackSize(64);
 		{
 			int i = MFRConfig.armorStacks.getBoolean(false) ? 4 : 1;
 			plasticHelmetItem.setRepairIngot("itemPlastic").setUnlocalizedName("mfr.plastic.armor.helm").setMaxStackSize(i);
